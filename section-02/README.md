@@ -55,8 +55,8 @@ git clone https://github.com/codered-by-ec-council/Hands-on-JavaScript-for-Ethic
 ```sh
 sudo docker pull vulnerables/web-dvwa
 sudo docker images
-sudo docker run --rm -it -d -p 127.0.0.1:8080:80 vulnerables/web-dvwa
-sudo docker run --rm -it -d --platform linux/amd64 -p 127.0.0.1:8080:80 vulnerables/web-dvwa
+~~sudo docker run --rm -it -d -p 127.0.0.1:8080:80 vulnerables/web-dvwa~~
+sudo docker run -it -d --platform linux/amd64 -p 127.0.0.1:8080:80 vulnerables/web-dvwa
 ```
 ```sh
 sudo docker cp {name-of-containter}:/etc/php/7.0/apache2/php.ini .
