@@ -62,8 +62,7 @@ OR
 ```sh
 sudo docker pull kaakaww/dvwa-docker
 sudo docker images
-sudo docker run -it -d --platform linux/amd64 -p 127.0.0.1:8080:80 vulnerables/web-dvwa
-
+docker run --rm -it -p 8080:80 kaakaww/dvwa-docker:latest
 ```
 ```sh
 sudo docker cp {name-of-containter}:/etc/php/7.0/apache2/php.ini .
